@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663299219752" clover="3.2.0">
+  <project timestamp="1663299219752" name="All files">
+    <metrics statements="18" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="8" elements="29" coveredelements="23" complexity="0" loc="18" ncloc="18" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="14" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
+      <file name="calculator.js" path="D:\projetos\tdd\unit-tests\components\calculator.js">
+        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="message.js" path="D:\projetos\tdd\unit-tests\components\message.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="helpers">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="validate.js" path="D:\projetos\tdd\unit-tests\helpers\validate.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
