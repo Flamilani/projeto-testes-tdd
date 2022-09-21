@@ -79,6 +79,38 @@ Escrever um teste que falha
 
 Fazer o teste passar
 
+```
+test('should sum the numbers correctly', () => {
+    let num1 = 3;
+    let num2 = 2;
+    result = calculator.sum(num1, num2);
+    expect(result).toBe(5);
+});
+
+-------------------------------
+
+$ yarn test
+yarn run v1.22.17
+$ jest
+ PASS  unit-tests/tests/calculator.test.js
+ PASS  unit-tests/tests/message.test.js
+  ● Console
+
+    console.log
+      Mensagem enviada com sucesso
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:837:25)
+
+ PASS  integration-test/tests/integration/persons.test.js
+
+Test Suites: 3 passed, 3 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        1.294 s, estimated 2 s
+Ran all test suites.
+Done in 2.09s.
+```
+
 Refatorar o código
 
 ### <h2 id="comandos">Uso de comando de execução</h2>
