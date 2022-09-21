@@ -15,7 +15,7 @@ Flavio Milani
       * [Testes de Unidade (Testes Unitários)](#Teste-de-Unidade)
       * [Padrão Triple A (Arrange, Act, Assert)](#Padrao-Triple)
       * [Cobertura de Testes (Coverage)](#Cobertura-Testes)
-      * [Teste de Integração](#Teste-de-Integracao)
+      * [Teste de Integração](#Teste-Integracao)
       * [Teste de Ponta a Ponta (e2e)](#Teste-e2e)
    * [Demonstrações de cada teste](#Demonstracoes)
 <!--te-->
@@ -26,7 +26,7 @@ Entender como iniciar um projeto TDD, como garantir qualidade de software e cód
 conceitos de testes unitários, compreender como implementar e rodar os testes em funcionamento, 
 com o resultado esperado ou erros gerados no relatório.
 
-<img style="width: 250px" src="https://feminitech.files.wordpress.com/2017/04/testing-finding-bug.png"/>
+<img style="width: 250px" src="https://feminitech.files.wordpress.com/2017/04/testing-finding-bug.png" alt="Testando e encontrando o bug com uso de lupa em frente do monitor de PC" />
 
 ### <h2 id="O-que-TDD">O que é TDD?</h2>
 
@@ -48,6 +48,20 @@ Essa técnica foi criada por Kent Beck e é um dos pilares do XP (Extreme Progra
 
 <img style="width: 450px" src="https://dkrn4sk0rn31v.cloudfront.net/2019/11/04105020/img-tdd.png" alt="Ciclo de TDD - 1. RED - Escreva um teste que falhe. 2. GREEN - Faça o código funcionar. 3 - REFACTOR - Elimine redundância." />
 
+### <h2 id="Frameworks">Frameworks TDD para JavaScript / Node</h2>
+
+<span>
+<img style="width: 125px;" src="https://96renato96.files.wordpress.com/2014/10/javascript-logo-png1.png" alt="Logo JavaScript - JS" />
+</span>
+<span>
+<img style="width: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Logo Nodejs" /></span>
+<span>
+<img style="width: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1K6LjEl4837ZWdIafl4HciVd3hEZMGqr5CxCI-BrAgvW8l3K4CU0ONlOkoeH2MWcrIw&usqp=CAU" alt="Logo Jest" /></span>
+<span>
+<img style="width: 150px;" src="https://camo.githubusercontent.com/fcca6a233a54a037861c99ab17d255d215807e6c0fcdce7d16a1a67814ede820/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3333383935382f696d616765732f313439363334352f7375706572746573742e706e67" alt="Logo Supertest" /></span>
+<span>
+<img style="width: 250px;" src="https://www.kindpng.com/picc/m/16-164468_cypress-io-logo-hd-png-download.png" alt="Logo Cypress" /></span>
+
 ### <h2 id="Piramide">Pirâmide de Testes</h2>
 
 <img src="https://miro.medium.com/max/640/1*S0yR438zKtJtEEBldSviFA.png" alt="A função da pirâmide de testes é basicamente definir níveis de testes e te dar um norte quanto à quantidade de testes que você deveria ter em cada um desses níveis" />
@@ -62,13 +76,13 @@ Entre essas duas camadas, temos os testes de integração. A ideia deles é veri
 
 <strong>Vantagens de testes de unidade:</strong>
 
-Diminuir a quantidade de bugs do sistema;
+1. Diminuir a quantidade de bugs do sistema;
 
-Diminuir a necessidade de testes manuais;
+2. Diminuir a necessidade de testes manuais;
 
-Desenvolver uma arquitetura mais eficiente;
+3. Desenvolver uma arquitetura mais eficiente;
 
-Facilitar o refactoring e aumentar a confiança.
+4. Facilitar o refactoring e aumentar a confiança.
 
 ### <h2 id="Padrao-Triple">Padrão Triple A (Arrange, Act, Assert) - Testes de Unidade</h2>
 
@@ -99,3 +113,23 @@ Abrindo o arquivo gerado em coverage/lcov-report/index.html), faltam alguns test
 <img src="https://vizir.com.br/wp-content/uploads/2018/07/Screenshot_20180727_211256-1.png" alt="abrindo o arquivo gerado em coverage/lcov-report/index.html), faltam alguns testes para garantir o correto funcionamento da aplicação, e por assim uma boa cobertura de testes." />
 
 <img style="width: 450px" src="https://miro.medium.com/max/1400/1*C4Mqqb1jkeFyKDOrcCXHKA.png" alt="abrindo o arquivo gerado em coverage/lcov-report/index.html), faltam alguns testes para garantir o correto funcionamento da aplicação, e por assim uma boa cobertura de testes." />
+
+### <h2 id="Teste-Integracao">Teste de Integração</h2>
+
+Teste de integração é o teste que é realizado entre módulos diferentes em um sistema.
+
+- Testar o sistema fazendo requisições HTTP (GET, POST, PUT, DELETE)
+- Analisar a requisição, verificar o resultado retornado e código de resposta
+- Comunicar entre sistema e banco de dados
+- Integrar sistema em API
+
+### <h2 id="Teste-e2e">Teste de Ponta a Ponta (end-to-end - e2e)</h2>
+
+Testes end-to-end são úteis para testar grandes fluxos de trabalho, especialmente quando eles são críticos para o seu negócio 
+ - Pagamentos
+- Criação de contas
+- Renderização da aplicação inteira
+- Endpoints da API
+- Sessões e Cookies
+- Navegação entre links diferentes
+
