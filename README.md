@@ -156,7 +156,22 @@ Testes end-to-end são úteis para testar grandes fluxos de trabalho, especialme
 
 #### Criar projeto com teste de ponta-a-ponta (e2e):
 
+Documentação de Cypress: https://docs.cypress.io/guides/getting-started/installing-cypress
+
+Instalar cypress:
+
+```
+yarn add cypress --dev
+```
+
+Rodar teste de ponta a ponta (e2e):
+
+```
+yarn run cypress:open
+```
+
 No arquivo package.json:
+
 ```
 {
   "devDependencies": {
