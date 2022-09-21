@@ -12,6 +12,7 @@ Flavio Milani
    * [Frameworks TDD para JavaScript / Node](#Frameworks)
    * [Pirâmide de Testes](#Piramide)
    * [Iniciar projeto com TDD](#iniciar-projeto)
+      * [Uso de comando de execução](#comandos)
       * [Testes de Unidade (Testes Unitários)](#Teste-de-Unidade)
       * [Padrão Triple A (Arrange, Act, Assert)](#Padrao-Triple)
       * [Cobertura de Testes (Coverage)](#Cobertura-Testes)
@@ -71,6 +72,26 @@ No topo da pirâmide, temos os testes de ponta a ponta (end to end ou e2e, pra r
 Na base, temos os testes de unidade, onde verificamos o funcionamento da menor unidade de código testável da nossa aplicação.
 
 Entre essas duas camadas, temos os testes de integração. A ideia deles é verificar se um conjunto de unidades se comporta da maneira correta, só que de forma menos abrangente do que os testes de ponta a ponta.
+
+### <h2 id="iniciar-projeto">Iniciar projeto com TDD</h2>
+
+Escrever um teste que falha
+
+Fazer o teste passar
+
+Refatorar o código
+
+### <h2 id="comandos">Uso de comando de execução</h2>
+
+<strong>Rodar teste unitário e de integração:</strong><br />
+yarn test
+yarn test:watch
+
+<strong>Rodar cobertura de testes:</strong><br />
+yarn coverage 
+
+<strong>Rodar teste de ponta a ponta (e2e):</strong><br />
+yarn run cypress:open
 
 ### <h2 id="Teste-de-Unidade">Testes de Unidade (Testes Unitários)</h2>
 
@@ -133,3 +154,26 @@ Testes end-to-end são úteis para testar grandes fluxos de trabalho, especialme
 - Sessões e Cookies
 - Navegação entre links diferentes
 
+#### Criar projeto com teste de ponta-a-ponta (e2e):
+
+No arquivo package.json:
+```
+{
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "jest": "^29.0.1",
+    "supertest": "^6.2.4"
+  },
+  "scripts": {
+    "test": "jest",
+	"start": "nodemon integration-test/index.js",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "cypress:open": "cypress open"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
+```
